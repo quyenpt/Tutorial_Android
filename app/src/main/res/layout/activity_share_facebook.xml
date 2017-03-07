@@ -12,12 +12,34 @@
 
     <com.facebook.share.widget.ShareButton
         android:id="@+id/fb_share_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        style="@style/FacebookLoginButton"
         android:contentDescription="share" />
+
     <com.facebook.share.widget.LikeView
         android:id="@+id/likeView"
         android:layout_width="wrap_content"
         android:layout_below="@id/fb_share_button"
         android:layout_height="wrap_content"/>
+
+    <android.widget.Button
+        android:id="@+id/share_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/abc"
+        android:layout_below="@+id/likeView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="74dp"
+        android:layout_marginTop="24dp" />
+
+    <android.widget.Button
+        android:id="@+id/like_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/share_button"
+        android:layout_alignStart="@+id/share_button" />
 </RelativeLayout>
